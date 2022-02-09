@@ -28,16 +28,17 @@ function calculateBmi() {
 
   if (bmi <= 18.5 ) {
     status = "Underweight"
-    document.getElementById("result").style.color = rgb(20, 86, 230);
+    document.getElementById("result").style.fontcolor = 'blue';
+    // result.addEventListener('Underweight',() => content.style.color = 'red');
   } else if (bmi >18.5 && bmi <= 24.9) {
     status  = "Normal"
-    document.getElementById("result").style.color = rgb(0, 255, 76);
+    document.getElementById("result").style.fontcolor = 'green';
   } else if (bmi >  25 && bmi <= 29.9) {
     status = "Owerweght"
-    document.getElementById("result").style.color = rgb(255, 238, 0);
+    document.getElementById("result").style.fontcolor = 'yellow';
   } else {
     status = "Obese"
-    document.getElementById("result").style.color = rgb(255, 0, 0);
+    document.getElementById("result").style.fontcolor = 'red';
   }
 
   result.textContent = (`${name.value}'s BMI is ${bmi} and
