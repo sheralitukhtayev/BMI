@@ -27,13 +27,13 @@ function calculateBmi() {
   let bmi = (weight / ( height*height )).toFixed(1);
 
   if (bmi <= 18.5 ) {
-    status = "You are underweight"
+    status = "Underweight"
   } else if (bmi >18.5 && bmi <= 24.9) {
-    status  = "You are normal"
+    status  = "Normal"
   } else if (bmi >  25 && bmi <= 29.9) {
-    status = "You are owerweght"
+    status = "Owerweght"
   } else {
-    status = "You are obese"
+    status = "Obese"
   }
 
   result.textContent = (`${name.value}'s BMI is ${bmi} and
