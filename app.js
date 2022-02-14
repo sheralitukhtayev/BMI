@@ -34,7 +34,7 @@ function calculateBmi() {
     status  = "Normal"
     document.getElementById("result").style.fontcolor = 'green';
   } else if (bmi >  25 && bmi <= 29.9) {
-    status = "Owerweght"
+    status = "Owerweight"
     document.getElementById("result").style.fontcolor = 'yellow';
   } else {
     status = "Obese"
